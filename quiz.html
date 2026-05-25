@@ -125,26 +125,26 @@
 
   </main>
 
-  <script>
-    const modules = {
-      1: { tag: 'Module 1', icon: 'fa-satellite-dish',    title: 'ATC Fundamentals',         desc: 'Test your knowledge of air traffic control basics, roles, and responsibilities.' },
-      2: { tag: 'Module 2', icon: 'fa-location-crosshairs', title: 'Navigation & Airspace',  desc: 'Test your knowledge of airspace classification, routes, and navigation systems.' },
-      3: { tag: 'Module 3', icon: 'fa-radio',              title: 'Radio Communication',     desc: 'Test your knowledge of standard phraseology and communication procedures.' },
-      4: { tag: 'Module 4', icon: 'fa-briefcase-medical',  title: 'Emergency Procedures',    desc: 'Test your knowledge of distress situations and emergency protocols.' },
-      5: { tag: 'Module 5', icon: 'fa-binoculars',         title: 'Radar & Surveillance',    desc: 'Test your knowledge of radar systems, transponders, and surveillance technology.' },
-      6: { tag: 'Module 6', icon: 'fa-book',               title: 'Final Simulation & Exam', desc: 'Full ATC simulation and certification assessment.' },
-    };
+ <script>
+  const modules = {
+    1: { tag: 'Module 1', icon: 'fa-satellite-dish',      title: 'ATC Fundamentals',         desc: 'Test your knowledge of air traffic control basics, roles, and responsibilities.' },
+    2: { tag: 'Module 2', icon: 'fa-location-crosshairs', title: 'Navigation & Airspace',     desc: 'Test your knowledge of airspace classification, routes, and navigation systems.' },
+    3: { tag: 'Module 3', icon: 'fa-radio',               title: 'Radio Communication',       desc: 'Test your knowledge of standard phraseology and communication procedures.' },
+    4: { tag: 'Module 4', icon: 'fa-briefcase-medical',   title: 'Emergency Procedures',      desc: 'Test your knowledge of distress situations and emergency protocols.' },
+    5: { tag: 'Module 5', icon: 'fa-binoculars',          title: 'Radar & Surveillance',      desc: 'Test your knowledge of radar systems, transponders, and surveillance technology.' },
+    6: { tag: 'Module 6', icon: 'fa-book',                title: 'Final Simulation & Exam',   desc: 'Full ATC simulation and certification assessment.' },
+  };
 
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('module') || 1;
-    const m = modules[id];
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get('module'));
+  const m = modules[id];
 
-    if (m) {
-      document.querySelector('.quiz-tag').innerHTML = `<i class="fa-solid ${m.icon}"></i> ${m.tag}`;
-      document.querySelector('.quiz-hero h1').textContent = m.title;
-      document.querySelector('.quiz-hero p').textContent = m.desc;
-    }
-  </script>
+  if (m) {
+    document.querySelector('.quiz-tag').innerHTML = `<i class="fa-solid ${m.icon}"></i> ${m.tag}`;
+    document.querySelector('.quiz-hero h1').textContent = m.title;
+    document.querySelector('.quiz-hero p').textContent = m.desc;
+  }
+</script>
 
 </body>
 </html>
