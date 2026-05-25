@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,23 +7,20 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<body>
 
-<body class="bg-[#0a1628] min-h-screen flex items-center justify-center px-5 py-12">
   <header>
     <div class="navbar container">
-
-      <!-- LOGO -->
       <a href="index.html" class="logo">
         <div class="logo-icon">
           <span class="radar-ping"></span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
-            stroke-linecap="round">
-            <circle cx="12" cy="12" r="10" />
-            <circle cx="12" cy="12" r="5" />
-            <line x1="12" y1="2" x2="12" y2="7" />
-            <line x1="12" y1="17" x2="12" y2="22" />
-            <line x1="2" y1="12" x2="7" y2="12" />
-            <line x1="17" y1="12" x2="22" y2="12" />
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="2"  x2="12" y2="7"/>
+            <line x1="12" y1="17" x2="12" y2="22"/>
+            <line x1="2"  y1="12" x2="7"  y2="12"/>
+            <line x1="17" y1="12" x2="22" y2="12"/>
           </svg>
         </div>
         <div class="logo-text-wrap">
@@ -36,16 +32,14 @@
         </div>
       </a>
 
-      <!-- DESKTOP NAV -->
       <nav class="desktop-nav">
-        <a href="#problem" class="nav-link">Problem</a>
+        <a href="#problem"  class="nav-link">Problem</a>
         <a href="#overview" class="nav-link">Overview</a>
-        <a href="#modules" class="nav-link">Modules</a>
-        <a href="#design" class="nav-link">Design</a>
+        <a href="#modules"  class="nav-link">Modules</a>
+        <a href="#design"   class="nav-link">Design</a>
         <a href="login.html" class="btn-outline">Sign In</a>
       </nav>
 
-      <!-- HAMBURGER -->
       <button type="button" id="burger" class="burger" aria-label="Toggle menu">
         <span class="bar bar-1"></span>
         <span class="bar bar-2"></span>
@@ -53,13 +47,13 @@
       </button>
     </div>
 
-    <!-- MOBILE MENU -->
     <div id="mobile-menu">
       <nav class="mobile-nav">
         <a href="#problem">Problem</a>
         <a href="#overview">Overview</a>
         <a href="#modules">Modules</a>
         <a href="#design">Design</a>
+        <a href="login.html">Sign In</a>
       </nav>
     </div>
   </header>
@@ -70,8 +64,7 @@
     <section class="hero hidden-section">
       <div class="hero-content">
         <h1>Online Training System for Air Traffic Controllers</h1>
-        <p>A web-based platform designed to train and certify air traffic controllers through structured modules, flight
-          simulations, and real-time assessments — built to meet ICAO standards.</p>
+        <p>A web-based platform designed to train and certify air traffic controllers through structured modules, flight simulations, and real-time assessments — built to meet ICAO standards.</p>
         <div class="hero-buttons">
           <a href="#problem" class="btn-primary">Explore System</a>
         </div>
@@ -81,8 +74,7 @@
         <div class="radar-ring radar-ring-2"></div>
         <div class="radar-ring radar-ring-3"></div>
         <svg class="radar-plane spin-slow" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" />
+          <path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/>
         </svg>
       </div>
     </section>
@@ -92,29 +84,26 @@
       <div class="section-row">
         <div class="section-half">
           <h2>The Challenge of Training Air Traffic Controllers</h2>
-          <p>Traditional ATC training relies heavily on physical simulators and in-person instruction, making it costly,
-            geographically limited, and difficult to scale. As air traffic demand grows globally, the need for a
-            flexible, standardized, and accessible training solution has never been greater.</p>
+          <p>Traditional ATC training relies heavily on physical simulators and in-person instruction, making it costly, geographically limited, and difficult to scale. As air traffic demand grows globally, the need for a flexible, standardized, and accessible training solution has never been greater.</p>
         </div>
         <div class="section-half">
           <blockquote>
-            <p>"The global shortage of qualified air traffic controllers is one of the most pressing challenges facing
-              aviation today."</p>
+            <p>"The global shortage of qualified air traffic controllers is one of the most pressing challenges facing aviation today."</p>
             <cite>— ICAO Global Aviation Safety Plan</cite>
           </blockquote>
         </div>
       </div>
       <div class="cards">
         <div class="card">
-          <p class="card-stat logo-font"><i class="fa-solid fa-plane"></i> 40,000 +</p>
+          <p class="card-stat logo-font"><i class="fa-solid fa-plane"></i> 40,000+</p>
           <p class="card-label">Daily flights managed worldwide</p>
         </div>
         <div class="card">
-          <p class="card-stat logo-font"><i class="fa-solid fa-user-clock"></i> 3 – 5 years</p>
+          <p class="card-stat logo-font"><i class="fa-solid fa-user-clock"></i> 3–5 years</p>
           <p class="card-label">Average ATC training duration</p>
         </div>
         <div class="card">
-          <p class="card-stat logo-font"><i class="fa-solid fa-globe"></i> 190 +</p>
+          <p class="card-stat logo-font"><i class="fa-solid fa-globe"></i> 190+</p>
           <p class="card-label">Countries following ICAO standards</p>
         </div>
       </div>
@@ -125,8 +114,7 @@
       <div class="section-row">
         <div class="section-half">
           <h2>What is the ATC Online Training System?</h2>
-          <p>A modular, web-based Learning Management System (LMS) built specifically for air traffic controller
-            training — combining theory, simulation, and assessment in one platform.</p>
+          <p>A modular, web-based Learning Management System (LMS) built specifically for air traffic controller training — combining theory, simulation, and assessment in one platform.</p>
         </div>
         <div class="section-half badges">
           <span class="badge">ICAO Compliant</span>
@@ -165,11 +153,10 @@
     <section id="modules" class="section hidden-section">
       <div>
         <h2>Training Modules</h2>
-        <p>Each module is designed to build on the previous, taking trainees from foundational knowledge to advanced
-          operational skills.</p>
+        <p>Each module is designed to build on the previous, taking trainees from foundational knowledge to advanced operational skills.</p>
       </div>
       <ul class="module-list">
-        <li class="module-item">
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">01</div>
           <div class="module-info">
             <span class="module-tag">Module 1</span>
@@ -177,12 +164,10 @@
             <p class="module-desc">Introduction to air traffic control, roles, and responsibilities</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
-        <li class="module-item">
+        </a>
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">02</div>
           <div class="module-info">
             <span class="module-tag">Module 2</span>
@@ -190,25 +175,21 @@
             <p class="module-desc">Airspace classification, routes, and navigation systems</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
-        <li class="module-item">
+        </a>
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">03</div>
           <div class="module-info">
             <span class="module-tag">Module 3</span>
-            <span class="module-title"><i class="fa-solid fa-radio"></i>  Radio Communication</span>
+            <span class="module-title"><i class="fa-solid fa-radio"></i> Radio Communication</span>
             <p class="module-desc">Standard phraseology and communication procedures</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
-        <li class="module-item">
+        </a>
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">04</div>
           <div class="module-info">
             <span class="module-tag">Module 4</span>
@@ -216,12 +197,10 @@
             <p class="module-desc">Handling distress situations and emergency protocols</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
-        <li class="module-item">
+        </a>
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">05</div>
           <div class="module-info">
             <span class="module-tag">Module 5</span>
@@ -229,12 +208,10 @@
             <p class="module-desc">Radar systems, transponders, and surveillance technology</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
-        <li class="module-item">
+        </a>
+        <a href="quiz.html" class="module-item">
           <div class="module-number logo-font">06</div>
           <div class="module-info">
             <span class="module-tag">Module 6</span>
@@ -242,76 +219,69 @@
             <p class="module-desc">Full ATC simulation and certification assessment</p>
           </div>
           <div class="module-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
           </div>
-        </li>
+        </a>
       </ul>
     </section>
 
     <!-- CTA -->
-    <section id="regisration" class="cta-section hidden-section">
+    <section id="registration" class="cta-section hidden-section">
       <div class="cta-box">
         <div class="cta-glow-1"></div>
         <div class="cta-glow-2"></div>
         <div class="cta-content">
           <h2>Ready to Start Your Training?</h2>
-          <p>Join thousands of trainees worldwide. Create your free account and begin your ATC certification journey
-            today.</p>
+          <p>Join thousands of trainees worldwide. Create your free account and begin your ATC certification journey today.</p>
         </div>
         <div class="cta-buttons">
           <a href="signup.html" class="btn-primary">Create Account</a>
-          <a href="login.html" class="btn-primary">Sign In</a>
+          <a href="login.html" class="btn-outline">Sign In</a>
         </div>
       </div>
     </section>
+
   </main>
-</body>
 
-</main>
-
-<footer>
-  <div class="footer-main">
-    <div class="footer-logo">
-      <div class="footer-logo-wrap">
-        <div class="logo-icon">
-          <span class="radar-ping"></span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
-            stroke-linecap="round">
-            <circle cx="12" cy="12" r="10" />
-            <circle cx="12" cy="12" r="5" />
-            <line x1="12" y1="2" x2="12" y2="7" />
-            <line x1="12" y1="17" x2="12" y2="22" />
-            <line x1="2" y1="12" x2="7" y2="12" />
-            <line x1="17" y1="12" x2="22" y2="12" />
-          </svg>
-        </div>
-        <div class="logo-text-wrap">
-          <div>
-            <span class="logo-font logo-atc">ATC</span>
-            <span class="logo-font logo-train"> TRAIN</span>
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <div class="footer-logo-wrap">
+          <div class="logo-icon">
+            <span class="radar-ping"></span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="2"  x2="12" y2="7"/>
+              <line x1="12" y1="17" x2="12" y2="22"/>
+              <line x1="2"  y1="12" x2="7"  y2="12"/>
+              <line x1="17" y1="12" x2="22" y2="12"/>
+            </svg>
           </div>
-          <p class="logo-sub">Air Traffic Controller System</p>
+          <div class="logo-text-wrap">
+            <div>
+              <span class="logo-font logo-atc">ATC</span>
+              <span class="logo-font logo-train"> TRAIN</span>
+            </div>
+            <p class="logo-sub">Air Traffic Controller System</p>
+          </div>
         </div>
       </div>
+      <div class="footer-about">
+        <p class="footer-about-title">About</p>
+        <p>Built with ICAO Standards in mind</p>
+        <p>Academic project — Web Design course</p>
+      </div>
     </div>
-    <div class="footer-about">
-      <p class="footer-about-title">About</p>
-      <p>Built with ICAO Standards in mind</p>
-      <p>Academic project — Web Design course</p>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© 2025 ATC Training System. All rights reserved.</p>
+        <p>Designed for academic purposes only.</p>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-      <p>© 2025 ATC Training System. All rights reserved.</p>
-      <p>Designed for academic purposes only.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="scroll.js"></script>
-<script src="./hamburger.js"></script>
+  <script src="scroll.js"></script>
+  <script src="hamburger.js"></script>
 </body>
-
 </html>
