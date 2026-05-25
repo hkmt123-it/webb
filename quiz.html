@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz — ATC Training System</title>
   <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -27,54 +28,99 @@
           <span class="logo-train"> TRAIN</span>
         </div>
       </a>
-      <a href="index.html#modules" class="btn-back">← Back to Modules</a>
+      <a href="index.html#modules" class="btn-back">
+        <i class="fa-solid fa-arrow-left"></i> Back to Modules
+      </a>
     </div>
   </header>
 
   <main>
 
     <section class="quiz-hero">
-      <div class="quiz-icon">📡</div>
-      <div class="quiz-tag">Module 1</div>
-      <h1>ATC Fundamentals</h1>
-      <p>Test your knowledge of air traffic control basics, roles, and responsibilities.</p>
+      <div class="quiz-hero-bg"></div>
+      <div class="quiz-hero-content">
+        <div class="quiz-tag">
+          <i class="fa-solid fa-satellite-dish"></i> Module 1
+        </div>
+        <h1>ATC Fundamentals</h1>
+        <p>Test your knowledge of air traffic control basics, roles, and responsibilities.</p>
+      </div>
     </section>
 
     <section class="quiz-info">
       <div class="info-card">
-        <div class="info-icon">❓</div>
+        <div class="info-icon-wrap">
+          <i class="fa-solid fa-circle-question"></i>
+        </div>
         <div class="info-value">10</div>
         <div class="info-label">Questions</div>
       </div>
       <div class="info-card">
-        <div class="info-icon">⭐</div>
+        <div class="info-icon-wrap">
+          <i class="fa-solid fa-star"></i>
+        </div>
         <div class="info-value">10</div>
         <div class="info-label">Points each</div>
       </div>
-      <div class="info-card">
-        <div class="info-icon">🏆</div>
+      <div class="info-card info-card--accent">
+        <div class="info-icon-wrap">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
         <div class="info-value">100</div>
         <div class="info-label">Total points</div>
       </div>
       <div class="info-card">
-        <div class="info-icon">⏱</div>
+        <div class="info-icon-wrap">
+          <i class="fa-solid fa-stopwatch"></i>
+        </div>
         <div class="info-value">15</div>
         <div class="info-label">Minutes</div>
       </div>
     </section>
 
     <section class="quiz-rules">
-      <h2>Before you begin</h2>
-      <ul>
-        <li>✅ Each question has one correct answer</li>
-        <li>✅ You cannot go back to a previous question</li>
-        <li>✅ The timer starts when you click Start</li>
-        <li>✅ Minimum passing score is 70 points</li>
+      <div class="rules-header">
+        <i class="fa-solid fa-circle-info"></i>
+        <h2>Before you begin</h2>
+      </div>
+      <ul class="rules-list">
+        <li>
+          <span class="rule-icon"><i class="fa-solid fa-check"></i></span>
+          <span>Each question has one correct answer</span>
+        </li>
+        <li>
+          <span class="rule-icon"><i class="fa-solid fa-check"></i></span>
+          <span>You cannot go back to a previous question</span>
+        </li>
+        <li>
+          <span class="rule-icon"><i class="fa-solid fa-check"></i></span>
+          <span>The timer starts when you click Start</span>
+        </li>
+        <li>
+          <span class="rule-icon"><i class="fa-solid fa-check"></i></span>
+          <span>Minimum passing score is <strong>70 points</strong></span>
+        </li>
       </ul>
     </section>
 
+    <section class="quiz-progress">
+      <div class="progress-label">
+        <span>Passing threshold</span>
+        <span>70 / 100</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" style="width: 70%"></div>
+        <div class="progress-marker" style="left: 70%">
+          <span>70%</span>
+        </div>
+      </div>
+    </section>
+
     <div class="quiz-start">
-      <button type="button" class="btn-start">Start Quiz</button>
+      <button type="button" class="btn-start">
+        <i class="fa-solid fa-play"></i> Start Quiz
+      </button>
+      <p class="start-note">Good luck! You have 15 minutes to complete all 10 questions.</p>
     </div>
 
   </main>
